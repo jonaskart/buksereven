@@ -1,0 +1,60 @@
+
+.bar {
+    background-color: orange;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.coral {
+    background-color:coral;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.glorp {
+    width: 150px;
+    float: left;
+    margin: auto 20px;
+}
+
+.detteerennettside {
+    float: right;
+    padding-right: 100px;
+}
+
+.cyber {
+    text-align: end;
+}
+
+.hacker {
+    width: 25%;
+    float: right;
+}
+
+.rev {
+    width: 35%;
+}
+
+.bunn {
+    text-align: center;
+}
+
+.icon {
+    width: 2%;
+}
+
+.ape {
+    width: 15%;
+    padding-left:42%;
+}
+
+.true {
+    text-align: center;
+    padding-bottom: 20px;
+}
