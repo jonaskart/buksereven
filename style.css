@@ -4,6 +4,7 @@
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    border-radius: 12px;
 }
 
 .coral {
@@ -11,6 +12,7 @@
     max-width: 1200px;
     margin:0 auto;
     padding: 0 20px;
+    border-radius: 12px;
 }
 
 .logo {
