@@ -1,4 +1,5 @@
 const hidden = document.getElementById("hidden");
+const slider = document.getElementById("slider");
 
 const successtxt = `
 Ja! Stikk på USB du`
@@ -7,22 +8,28 @@ Nei! Fortsett å jobb`
 
 function sjekk() {
     if (document.getElementById('knapptekst').textContent === "Prøv igjen?") {
-        location.reload();
-        return;
-    }
-    loginShow();
+        restartAlt();
+    } else {
+        if (slider.checked) {
+            loginSuccess(); prøvIgjen();
+        } else {
+            random(); prøvIgjen();
+        }
+    } 
+};
+
+function random() {
     if (Math.floor(Math.random() * 2) === 1) {
         loginSuccess();
-        console.log("it worked");
     } else {
         loginFail();
-        console.log("it worked");
-    }
-    prøvIgjen();
+    } 
 };
 
 function loginShow() {
     document.getElementById('skalvi').style.display = "";
+    hidden.style.paddingTop = '';
+    document.getElementById('knapp').style.marginTop = '';
 };
 
 function loginSuccess() {
@@ -39,14 +46,20 @@ function loginFail() {
 function loginHide() {
     document.getElementById('skalvi').style.display = "none";
     hidden.style.paddingTop = '300px';
+    document.getElementById('knapp').style.marginTop = '195px';
 };
 
 function prøvIgjen() {
     document.getElementById('knapptekst').textContent = "Prøv igjen?";
-
 };
 
 function skytConfetti() {
     confetti({ particleCount: 100, angle: 60, spread: 70, origin: { x: 0, y: 0.7 } });
     confetti({ particleCount: 100, angle: 120, spread: 70, origin: { x: 1, y: 0.7 } });
+};
+
+function restartAlt() {
+    hidden.innerHTML = "";
+    loginShow();
+    document.getElementById('knapptekst').textContent = "Sjekk";
 };
