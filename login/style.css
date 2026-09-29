@@ -1,0 +1,41 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#skalvi {
+    padding-top: 70px;
+    width: 55%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#knapp {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(253 135 56);
+    width: 300px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#knapp:hover {
+    background-color: rgb(173, 99, 50);
+}
+
+#knapptekst {
+    margin: 0;
+}
+
+#hidden {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
