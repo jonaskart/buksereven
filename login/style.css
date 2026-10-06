@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
 body {
     background-image: url('images/background.png');
     background-size: cover;
@@ -11,7 +16,6 @@ body {
     padding-top: 70px;
     width: clamp(220px, 55%, 600px);
     display: block;
-    margin: 0 auto;
     height: auto;
 }
 
@@ -38,10 +42,22 @@ body {
 }
 
 #hidden {
+    margin: 0;
+    max-width: 90%;
     text-align: center;
-    font-size: clamp(40px, 12vw, 100px);
+    font-size: clamp(24px, 7vw, 56px);
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    padding-top: 70px;
+}
+
+.info {
+    display: grid;
+    place-items: center;
+}
+
+.info > * {
+    grid-area: 1 / 1;
 }
 
 .juksboks {

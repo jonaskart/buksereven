@@ -27,9 +27,7 @@ function random() {
 };
 
 function loginShow() {
-    document.getElementById('skalvi').style.display = "";
-    hidden.style.paddingTop = '';
-    document.getElementById('knapp').style.marginTop = '';
+    document.getElementById('skalvi').style.visibility = "visible";;
 };
 
 function loginSuccess() {
@@ -44,9 +42,7 @@ function loginFail() {
 };
 
 function loginHide() {
-    document.getElementById('skalvi').style.display = "none";
-    hidden.style.paddingTop = '300px';
-    document.getElementById('knapp').style.marginTop = '195px';
+    document.getElementById('skalvi').style.visibility = "hidden";
 };
 
 function prøvIgjen() {
