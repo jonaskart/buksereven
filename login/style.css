@@ -12,8 +12,15 @@ body {
     min-height: 100dvh;
 }
 
+main {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #skalvi {
-    padding-top: 70px;
     width: clamp(220px, 55%, 600px);
     display: block;
     height: auto;
@@ -48,7 +55,6 @@ body {
     font-size: clamp(24px, 7vw, 56px);
     font-family: 'Courier New', Courier, monospace;
     color: white;
-    padding-top: 70px;
 }
 
 .info {
