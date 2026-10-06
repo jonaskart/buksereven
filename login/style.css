@@ -1,15 +1,18 @@
 body {
     background-image: url('images/background.png');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    background-attachment: fixed;
+    min-height: 100dvh;
 }
 
 #skalvi {
     padding-top: 70px;
-    width: 55%;
-    display: flex;
+    width: clamp(220px, 55%, 600px);
+    display: block;
     margin: 0 auto;
+    height: auto;
 }
 
 #knapp {
@@ -36,7 +39,7 @@ body {
 
 #hidden {
     text-align: center;
-    font-size: 100px;
+    font-size: clamp(40px, 12vw, 100px);
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
@@ -49,6 +52,7 @@ body {
     align-items: center;
     gap: 12px;
     padding: 10px;
+    padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
 }
 
 .juks {
