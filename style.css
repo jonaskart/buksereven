@@ -2,6 +2,32 @@
     font-family:'Courier New', Courier, monospace;
 }
 
+.topbar {
+    padding: 12px;
+    top: 0;
+    position: sticky;
+    display: flex;
+    backdrop-filter: blur(2px);
+    justify-content: space-between;
+}   
+
+.topsm  {
+    list-style-type: none;
+    display: flex;
+    padding-right: 15%
+}
+
+#icon {
+    width: 65%;
+    padding-top: 10%;
+}
+
+.toptext {
+    padding-left: 15%;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
 .bar {
     background-color: orange;
     max-width: 1200px;
@@ -63,4 +89,15 @@
 .true {
     text-align: center;
     padding-bottom: 20px;
+}
+
+#bottom {
+    position: sticky;
+    display: flex;
+    bottom: 0;
+    width: 75%;
+}
+
+#gaavekkframeg {
+    list-style-type: none;
 }
